@@ -14,6 +14,25 @@
 - **Key design insights**: systematic comparison of 24 methods reveals three dominant factors for CAC performance — **prior utilization**, **network architecture**, and **training strategy** — and analyzes their respective roles.
 
 
+## ✅ TODO
+
+UniCAC is a universal benchmark for Computational Aberration Correction (CAC) emphasizing optical-physics intuition. Assets will be released in the following stages:
+
+### 1. Data & Optical Assets
+- [ ] Release Train / Val / Test datasets
+- [ ] Release Zemax files (`.zmx`)
+- [ ] Release simulated PSF assets
+
+### 2. Evaluation Metrics
+- [ ] Release ODE calculation script
+- [ ] Release Overall Performance (O.P.) evaluation script
+
+### 3. Unified Framework
+- [ ] Release unified codebase integrating most of the evaluated baseline models
+
+
+
+
 ## 🎓 Citation
 
 If you find this work useful, please consider citing:
