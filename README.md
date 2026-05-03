@@ -16,8 +16,6 @@
 
 ## ✅ TODO
 
-UniCAC is a universal benchmark for Computational Aberration Correction (CAC) emphasizing optical-physics intuition. Assets will be released in the following stages:
-
 ### 1. Data & Optical Assets
 - [ ] Release Train / Val / Test datasets
 - [ ] Release Zemax files (`.zmx`)
