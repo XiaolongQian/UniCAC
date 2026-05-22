@@ -14,14 +14,35 @@
 - **Key design insights**: systematic comparison of 24 methods reveals three dominant factors for CAC performance — **prior utilization**, **network architecture**, and **training strategy** — and analyzes their respective roles.
 
 
+## 📰 News
+
+- **2026-05-22**: The CACBench benchmark dataset has been released on [Hugging Face](https://huggingface.co/datasets/Residual/UniCAC).
+
+The released dataset contains four parts:
+
+```text
+CACBench_Data_release/
+CACBench_Lib_release/
+CACBench_Zmx_release/
+CACBench_Checker_release/
+```
+
+- `CACBench_Data_release/`: image data and labels for training, validation, and testing.
+- `CACBench_Lib_release/`: degradation/lens library files used by the dataset.
+- `CACBench_Zmx_release/`: optical design files, including ZMX/ZDA files.
+- `CACBench_Checker_release/`: checker files for evaluation and visualization.
+
+
 ## ✅ TODO
 
 ### 1. Data & Optical Assets
-- [ ] Release Train / Val / Test datasets
-- [ ] Release Zemax files (`.zmx`)
-- [ ] Release simulated PSF assets
+- [x] Release Train / Val / Test datasets
+- [x] Release degradation/lens library files
+- [x] Release Zemax files (`.zmx`, `.zda`)
+- [x] Release simulated PSF assets
 
 ### 2. Evaluation Metrics
+- [x] Release checker files for evaluation and visualization
 - [ ] Release ODE calculation script
 - [ ] Release Overall Performance (O.P.) evaluation script
 
