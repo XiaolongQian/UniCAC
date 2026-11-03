@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pth
+*.pt
+*.safetensors
+experiments/
+results/
+datasets/local/
+tb_logger/
+*.log
+*.egg-info/
+.eggs/
+build/
+dist/
+PENDING.md
+models.json

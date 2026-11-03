@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use UniCAC, please cite the paper listed in README.md."
+title: "UniCAC: Towards Universal Computational Aberration Correction in Photographic Cameras"
+type: software
+repository-code: "https://github.com/XiaolongQian/UniCAC"
+url: "https://github.com/XiaolongQian/UniCAC"
+authors:
+  - family-names: Qian
+    given-names: Xiaolong
+  - family-names: Jiang
+    given-names: Qi
+  - family-names: Gao
+    given-names: Yao
+  - family-names: Sun
+    given-names: Lei
+  - family-names: Yi
+    given-names: Zhonghua
+  - family-names: Yang
+    given-names: Kailun
+  - family-names: Van Gool
+    given-names: Luc
+  - family-names: Wang
+    given-names: Kaiwei

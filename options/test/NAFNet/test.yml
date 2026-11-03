@@ -1,0 +1,226 @@
+# No original method test YAML found; RGB datasets follow PART benchmark groups.
+name: BenchCAC-NAFNet_test_5level
+model_type: ImageRestorationModel
+scale: 1
+num_gpu: 1
+manual_seed: 10
+datasets:
+  test1_1_new:
+    name: BenchCAC_L1_1
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L1/piece6_fov40_fnum4.0_aper6_imgr14_ttl33.4_bfl3.3_aspFalse_rms0.0479_idx57/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L1/piece6_fov40_fnum4.0_aper6_imgr14_ttl33.4_bfl3.3_aspFalse_rms0.0479_idx57/ab
+    io_backend:
+      type: disk
+  test1_2:
+    name: BenchCAC_L1_2
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L1/piece5_fov30_fnum4.0_aper4_imgr14_ttl48.5_bfl4.8_aspFalse_rms0.039_idx7/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L1/piece5_fov30_fnum4.0_aper4_imgr14_ttl48.5_bfl4.8_aspFalse_rms0.039_idx7/ab
+    io_backend:
+      type: disk
+  test1_3:
+    name: BenchCAC_L1_3
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L1/piece5_fov40_fnum4.0_aper0_imgr14_ttl33.4_bfl3.3_aspFalse_rms0.0633_idx89/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L1/piece5_fov40_fnum4.0_aper0_imgr14_ttl33.4_bfl3.3_aspFalse_rms0.0633_idx89/ab
+    io_backend:
+      type: disk
+  test1_4:
+    name: BenchCAC_L1_4
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L1/piece6_fov30_fnum4.0_aper0_imgr14_ttl48.5_bfl4.8_aspFalse_rms0.0492_idx41/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L1/piece6_fov30_fnum4.0_aper0_imgr14_ttl48.5_bfl4.8_aspFalse_rms0.0492_idx41/ab
+    io_backend:
+      type: disk
+  test1_5:
+    name: BenchCAC_L1_5
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L1/piece6_fov40_fnum4.0_aper6_imgr14_ttl33.4_bfl3.3_aspFalse_rms0.0493_idx63/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L1/piece6_fov40_fnum4.0_aper6_imgr14_ttl33.4_bfl3.3_aspFalse_rms0.0493_idx63/ab
+    io_backend:
+      type: disk
+  test2_1:
+    name: BenchCAC_L2_1
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L2/piece3_fov30_fnum3.0_aper2_imgr14_ttl48.5_bfl4.8_aspFalse_rms0.0741_idx10/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L2/piece3_fov30_fnum3.0_aper2_imgr14_ttl48.5_bfl4.8_aspFalse_rms0.0741_idx10/ab
+    io_backend:
+      type: disk
+  test2_2:
+    name: BenchCAC_L2_2
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L2/piece4_fov30_fnum3.0_aper4_imgr14_ttl48.5_bfl4.8_aspTrue_rms0.048_idx7/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L2/piece4_fov30_fnum3.0_aper4_imgr14_ttl48.5_bfl4.8_aspTrue_rms0.048_idx7/ab
+    io_backend:
+      type: disk
+  test2_3:
+    name: BenchCAC_L2_3
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L2/piece2_fov40_fnum4.0_aper0_imgr14_ttl33.4_bfl3.3_aspFalse_rms0.0857_idx83/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L2/piece2_fov40_fnum4.0_aper0_imgr14_ttl33.4_bfl3.3_aspFalse_rms0.0857_idx83/ab
+    io_backend:
+      type: disk
+  test2_4:
+    name: BenchCAC_L2_4
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L2/piece6_fov20_fnum3.0_aper0_imgr14_ttl76.9_bfl7.7_aspFalse_rms0.0793_idx74/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L2/piece6_fov20_fnum3.0_aper0_imgr14_ttl76.9_bfl7.7_aspFalse_rms0.0793_idx74/ab
+    io_backend:
+      type: disk
+  test2_5_new:
+    name: BenchCAC_L2_5
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L2/piece6_fov20_fnum4.0_aper6_imgr14_ttl76.9_bfl7.7_aspFalse_rms0.0529_idx67/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L2/piece6_fov20_fnum4.0_aper6_imgr14_ttl76.9_bfl7.7_aspFalse_rms0.0529_idx67/ab
+    io_backend:
+      type: disk
+  test3_1:
+    name: BenchCAC_L3_1
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L3/piece2_fov20_fnum2.0_aper2_imgr14_ttl76.9_bfl7.7_aspTrue_rms0.0909_idx9/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L3/piece2_fov20_fnum2.0_aper2_imgr14_ttl76.9_bfl7.7_aspTrue_rms0.0909_idx9/ab
+    io_backend:
+      type: disk
+  test3_2:
+    name: BenchCAC_L3_2
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L3/piece2_fov20_fnum4.0_aper2_imgr14_ttl76.9_bfl7.7_aspFalse_rms0.0728_idx37/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L3/piece2_fov20_fnum4.0_aper2_imgr14_ttl76.9_bfl7.7_aspFalse_rms0.0728_idx37/ab
+    io_backend:
+      type: disk
+  test3_3:
+    name: BenchCAC_L3_3
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L3/piece3_fov20_fnum3.0_aper0_imgr14_ttl76.9_bfl7.7_aspFalse_rms0.0852_idx121/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L3/piece3_fov20_fnum3.0_aper0_imgr14_ttl76.9_bfl7.7_aspFalse_rms0.0852_idx121/ab
+    io_backend:
+      type: disk
+  test3_4:
+    name: BenchCAC_L3_4
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L3/piece4_fov30_fnum4.0_aper0_imgr14_ttl48.5_bfl4.8_aspTrue_rms0.0523_idx13/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L3/piece4_fov30_fnum4.0_aper0_imgr14_ttl48.5_bfl4.8_aspTrue_rms0.0523_idx13/ab
+    io_backend:
+      type: disk
+  test3_5:
+    name: BenchCAC_L3_5
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L3/piece5_fov20_fnum2.0_aper4_imgr14_ttl76.9_bfl7.7_aspFalse_rms0.0985_idx34/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L3/piece5_fov20_fnum2.0_aper4_imgr14_ttl76.9_bfl7.7_aspFalse_rms0.0985_idx34/ab
+    io_backend:
+      type: disk
+  test4_1:
+    name: BenchCAC_L4_1
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L4/piece2_fov20_fnum3.0_aper2_imgr14_ttl76.9_bfl7.7_aspFalse_rms0.0997_idx51/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L4/piece2_fov20_fnum3.0_aper2_imgr14_ttl76.9_bfl7.7_aspFalse_rms0.0997_idx51/ab
+    io_backend:
+      type: disk
+  test4_2:
+    name: BenchCAC_L4_2
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L4/piece2_fov20_fnum4.0_aper2_imgr14_ttl76.9_bfl7.7_aspFalse_rms0.0897_idx70/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L4/piece2_fov20_fnum4.0_aper2_imgr14_ttl76.9_bfl7.7_aspFalse_rms0.0897_idx70/ab
+    io_backend:
+      type: disk
+  test4_3:
+    name: BenchCAC_L4_3
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L4/piece3_fov30_fnum3.0_aper2_imgr14_ttl48.5_bfl4.8_aspTrue_rms0.0656_idx25/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L4/piece3_fov30_fnum3.0_aper2_imgr14_ttl48.5_bfl4.8_aspTrue_rms0.0656_idx25/ab
+    io_backend:
+      type: disk
+  test4_4:
+    name: BenchCAC_L4_4
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L4/piece4_fov30_fnum2.0_aper0_imgr14_ttl48.5_bfl4.8_aspTrue_rms0.0931_idx5/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L4/piece4_fov30_fnum2.0_aper0_imgr14_ttl48.5_bfl4.8_aspTrue_rms0.0931_idx5/ab
+    io_backend:
+      type: disk
+  test4_5:
+    name: BenchCAC_L4_5
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L4/piece4_fov40_fnum4.0_aper0_imgr14_ttl33.4_bfl3.3_aspTrue_rms0.0682_idx23/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L4/piece4_fov40_fnum4.0_aper0_imgr14_ttl33.4_bfl3.3_aspTrue_rms0.0682_idx23/ab
+    io_backend:
+      type: disk
+  test5_1:
+    name: BenchCAC_L5_1
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L5/piece1_fov20_fnum4.0_aper0_imgr14_ttl76.9_bfl7.7_aspTrue_rms0.1785_idx38/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L5/piece1_fov20_fnum4.0_aper0_imgr14_ttl76.9_bfl7.7_aspTrue_rms0.1785_idx38/ab
+    io_backend:
+      type: disk
+  test5_2:
+    name: BenchCAC_L5_2
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L5/piece2_fov20_fnum2.0_aper2_imgr14_ttl76.9_bfl7.7_aspFalse_rms0.1574_idx81/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L5/piece2_fov20_fnum2.0_aper2_imgr14_ttl76.9_bfl7.7_aspFalse_rms0.1574_idx81/ab
+    io_backend:
+      type: disk
+  test5_3:
+    name: BenchCAC_L5_3
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L5/piece2_fov30_fnum2.0_aper2_imgr14_ttl48.5_bfl4.8_aspTrue_rms0.2069_idx38/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L5/piece2_fov30_fnum2.0_aper2_imgr14_ttl48.5_bfl4.8_aspTrue_rms0.2069_idx38/ab
+    io_backend:
+      type: disk
+  test5_4:
+    name: BenchCAC_L5_4
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L5/piece2_fov30_fnum4.0_aper2_imgr14_ttl48.5_bfl4.8_aspFalse_rms0.1601_idx94/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L5/piece2_fov30_fnum4.0_aper2_imgr14_ttl48.5_bfl4.8_aspFalse_rms0.1601_idx94/ab
+    io_backend:
+      type: disk
+  test5_5:
+    name: BenchCAC_L5_5
+    type: PairedImageDataset
+    dataroot_gt: datasets/CACBench_Data/test_sample/L5/piece3_fov30_fnum2.0_aper0_imgr14_ttl48.5_bfl4.8_aspTrue_rms0.0945_idx1/gt
+    dataroot_lq: datasets/CACBench_Data/test_sample/L5/piece3_fov30_fnum2.0_aper0_imgr14_ttl48.5_bfl4.8_aspTrue_rms0.0945_idx1/ab
+    io_backend:
+      type: disk
+
+# network structures
+network_g:
+  type: NAFNetLocal
+  width: 64
+  enc_blk_nums: [1, 1, 1, 28]
+  middle_blk_num: 1
+  dec_blk_nums: [1, 1, 1, 1]
+
+path:
+  pretrain_network_g: ../huggingface/NAFNet/NAFNet.pth
+  strict_load_g: true
+  param_key_g: params
+  resume_state: null
+val:
+  val_freq: 10000.0
+  save_img: true
+  pbar: true
+  metrics:
+    psnr:
+      type: calculate_psnr
+      crop_border: 0
+      test_y_channel: false
+    ssim:
+      type: calculate_ssim
+      crop_border: 0
+      test_y_channel: false
+    lpips:
+      type: calculate_lpips
+      crop_border: 0
+      test_y_channel: false
+  suffix: null
+logger:
+  print_freq: 200
+  save_checkpoint_freq: 10000.0
+  use_tb_logger: true
+  wandb:
+    project: null
+    resume_id: null
+dist_params:
+  backend: nccl
+  port: 29500
+inference_source: options/test/BenchCAC/PART/test_bench_part.yml (25 shared groups);
+  existing method-specific grids settings retained
